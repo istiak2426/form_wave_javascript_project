@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100;0,400;0,500;1,100;1,500&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Azeret Mono", monospace;
+  background-color: rgb(136, 36, 131);
+}
+
+.main {
+  width: 700px;
+  height: 400px;
+  background-color: rgb(246, 255, 196);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main h1 {
+  margin-bottom: 50px;
+}
+
+.main form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-control {
+  width: 60%;
+  position: relative;
+}
+
+.form-control:nth-child(1) {
+  margin-bottom: 50px;
+}
+
+.form-control:nth-child(2) {
+  margin-top: 50px;
+}
+
+.form-control label {
+  display: none;
+}
+
+.form-control .form-span {
+  position: absolute;
+  top: -20px;
+  left: 0;
+}
+
+.form-control input {
+  outline: none;
+  border: none;
+  width: 100%;
+  background-color: transparent;
+  border-bottom: 5px solid black;
+  font-size: 24px;
+}
+
+span {
+  display: inline-block;
+  transition: transform 0.3s;
+  transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.form-control input:focus + .form-span span {
+  transform: translateY(-30px);
+}
